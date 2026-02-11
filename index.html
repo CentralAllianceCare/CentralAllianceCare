@@ -1,1050 +1,908 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="nursing agency, healthcare staffing, registered nurses, aged care staffing, hospital staffing, community nursing, Central Alliance Care, Singleton Heights, NSW">
-        <meta name="description" content="Central Alliance Care provides reliable nursing staff solutions for healthcare facilities and in-home care in Singleton Heights, NSW.">
+        <meta name="keywords" content="healthcare staffing app, NDIS staffing, aged care staffing, disability support workers, nurse marketplace, care worker platform, Central Alliance Care">
+        <meta name="description" content="CareConnect by Central Alliance Care - The marketplace connecting healthcare workers with disability, aged care, and allied health companies. Find shifts, book staff, rate and review.">
         <meta name='copyright' content='Central Alliance Care'>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Central Alliance Care - Nursing Agency</title> <link rel="icon" href="img/logo.png">
+        <title>CareConnect - Healthcare Staffing Marketplace | Central Alliance Care</title>
+        <link rel="icon" href="img/logo.png">
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/nice-select.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/icofont.css">
-        <link rel="stylesheet" href="css/slicknav.min.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/datepicker.css">
         <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/app-landing.css">
+    </head>
+    <body class="app-landing">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <!-- ==================== HEADER ==================== -->
+        <header class="app-header" id="app-header">
+            <div class="container">
+                <a href="index.html" class="app-logo">
+                    <img src="img/logo.png" alt="CareConnect Logo">
+                    <span class="logo-text">CareConnect</span>
+                </a>
 
-        <link rel="stylesheet" href="css/color/color14.css">
+                <ul class="app-nav" id="app-nav">
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#user-types">Who It's For</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#ratings">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
 
-        </head>
-    <body>
-
-        <div class="preloader">
-            <div class="loader">
-                <div class="loader-outter"></div>
-                <div class="loader-inner"></div>
-                <div class="indicator">
-                    <svg width="16px" height="12px">
-                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                    </svg>
+                <div class="app-header-actions">
+                    <a href="login.html" class="btn-app btn-app-sm" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.3);">Log In</a>
+                    <a href="register.html" class="btn-app btn-app-sm btn-app-primary">Sign Up Free</a>
                 </div>
+
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+        <div class="mobile-menu-panel" id="mobile-panel">
+            <button class="close-menu" id="close-menu" aria-label="Close menu"><i class="fa fa-times"></i></button>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#user-types">Who It's For</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#ratings">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-cta">
+                <a href="login.html" class="btn-app btn-app-secondary" style="width:100%;justify-content:center;">Log In</a>
+                <a href="register.html" class="btn-app btn-app-primary" style="width:100%;justify-content:center;">Sign Up Free</a>
             </div>
         </div>
-        <header class="header">
-            <div class="topbar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-5 col-12">
-                            <ul class="top-link">
-                                <li><a href="about.html">About</a></li> <li><a href="Nurses.html">Nurses</a></li> <li><a href="contact.html">Contact</a></li> <li><a href="faq.html">FAQ</a></li> </ul>
-                            </div>
-                        <div class="col-lg-6 col-md-7 col-12">
-                            <ul class="top-contact">
-                                <li><i class="fa fa-phone"></i><a href="tel:+61400000000">+61 400 000 000</a></li>
-                                <li><i class="fa fa-envelope"></i><a href="mailto:contact@centralalliancecare.com.au">contact@centralalliancecare.com.au</a></li>
-                            </ul>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-inner">
-                <div class="container">
-                    <div class="inner">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-12">
-                                <div class="logo">
-                                     <a href="index.html"><img src="img/logo.png" alt="Central Alliance Care Logo"></a>
-                                </div>
-                                <div class="mobile-nav"></div>
-                                </div>
-                            <div class="col-lg-7 col-md-9 col-12">
-                                <div class="main-menu">
-                                    <nav class="navigation">
-                                        <ul class="nav menu">
-                                            <li class="active"><a href="index.html">Home <i class="icofont-rounded-down"></i></a>
-                                                </li>
-                                            <li><a href="#">Nurses <i class="icofont-rounded-down"></i></a>
-                                                <ul class="dropdown">
-                                                     <li><a href="Nurses.html">Why Join Us?</a></li>
-                                                    <li><a href="Nurses-details.html">Opportunities</a></li>
-                                                    <li><a href="register.html">Register</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Services <i class="icofont-rounded-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="service.html">Our Services</a></li>
-                                                    <li><a href="service-details.html">Service Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="appointment.html">Request Staff</a></li> <li><a href="time-table.html">Nurse Availability</a></li> <li><a href="testimonials.html">Testimonials</a></li>
-                                                    <li><a href="pricing.html">Service Rates</a></li> <li><a href="register.html">Sign Up (Nurses)</a></li>
-                                                    <li><a href="login.html">Login</a></li> <li><a href="faq.html">Faq</a></li>
-                                                    <li><a href="mail-success.html">Mail Success</a></li> <li><a href="404.html">404 Error</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="blog-grid.html">News & Insights</a></li>
-                                                    <li><a href="blog-single.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                </div>
-                            <div class="col-lg-2 col-12">
-                                <div class="get-quote">
-                                    <a href="appointment.html" class="btn">Request Staff</a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </header>
-        <section class="slider">
-            <div class="hero-slider">
-                <div class="single-slider" style="background-image:url('img/slider-1.jpg')">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="text">
-                                    <h1>We Provide Expert <span>Nursing</span> Services You Can <span>Trust!</span></h1>
-                                     <p>Connecting Singleton Heights and the Hunter Valley with skilled, compassionate nurses for facilities and home care.</p>
-                                    <div class="button">
-                                        <a href="appointment.html" class="btn">Request Staff</a>
-                                        <a href="about.html" class="btn primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider" style="background-image:url('img/slider-2.jpg')">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="text">
-                                    <h1>Quality <span>Healthcare Staffing</span> Solutions For Your <span>Facility!</span></h1>
-                                     <p>Reliable, vetted nursing professionals available for casual shifts, contracts, and permanent placements.</p>
-                                    <div class="button">
-                                         <a href="appointment.html" class="btn">Request Staff</a>
-                                        <a href="service.html" class="btn primary">Our Services</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider" style="background-image:url('img/slider-3.jpg')">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="text">
-                                    <h1>Join Our Team of <span>Dedicated</span> Nursing <span>Professionals!</span></h1>
-                                     <p>Find rewarding opportunities, flexible scheduling, and supportive agency culture at Central Alliance Care.</p>
-                                    <div class="button">
-                                        <a href="Nurses.html" class="btn">Work With Us</a>
-                                        <a href="contact.html" class="btn primary">Contact Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-        </section>
-        <section class="schedule">
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="app-hero" id="hero">
             <div class="container">
-                <div class="schedule-inner">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12 ">
-                            <div class="single-schedule first">
-                                <div class="inner">
-                                    <div class="icon">
-                                        <i class="icofont-ui-call"></i>
-                                    </div>
-                                    <div class="single-content">
-                                        <span>Need Staff Urgently?</span>
-                                        <h4>Emergency Placements</h4>
-                                         <p>We provide rapid response staffing solutions to cover unexpected needs and critical shortages.</p>
-                                        <a href="appointment.html">REQUEST NOW<i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-schedule middle">
-                                <div class="inner">
-                                    <div class="icon">
-                                        <i class="icofont-calendar"></i>
-                                    </div>
-                                    <div class="single-content">
-                                        <span>For Our Nurses</span>
-                                        <h4>Flexible Scheduling</h4> <p>Access diverse job opportunities with schedules that fit your lifestyle through our easy-to-use system.</p>
-                                        <a href="Nurses.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 col-12">
-                            <div class="single-schedule last">
-                                <div class="inner">
-                                    <div class="icon">
-                                        <i class="icofont-ui-clock"></i>
-                                    </div>
-                                    <div class="single-content">
-                                        <span>Contact Us</span>
-                                        <h4>Opening Hours</h4>
-                                         <ul class="time-sidual">
-                                            <li class="day">Monday - Friday <span>8.00am - 5.00pm</span></li>
-                                            <li class="day">Saturday <span>9.00am - 1.00pm</span></li>
-                                            <li class="day">After Hours Contact <span>Available 24/7</span></li> </ul>
-                                        <a href="contact.html">CONTACT DETAILS<i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="Feautes section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Always Ready to Support Your Facility & Care Needs</h2> <img src="img/section-img.png" alt="#">
-                             <p>Providing reliable staffing and compassionate care through our dedicated team.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-12">
-                        <div class="single-features">
-                            <div class="signle-icon">
-                                <i class="icofont icofont-headphone-alt"></i>
-                            </div>
-                            <h3>24/7 Availability</h3> <p>Our support team is available around the clock for urgent staffing requests and client assistance.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="single-features">
-                            <div class="signle-icon">
-                                <i class="icofont icofont-certificate-alt-1"></i>
-                            </div>
-                            <h3>Vetted Professionals</h3> <p>Rigorous screening ensures all our nurses and support staff are qualified, experienced, and compliant.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="single-features last">
-                            <div class="signle-icon">
-                                <i class="icofont icofont-briefcase-1"></i> </div>
-                            <h3>Tailored Solutions</h3> <p>We work closely with you to understand your specific needs and provide the right staffing match.</p>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <div id="fun-facts" class="fun-facts section overlay">
-             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-fun">
-                            <i class="icofont icofont-building-alt"></i>
-                            <div class="content">
-                                <span class="counter">85</span>
-                                <p>Client Facilities</p> </div>
-                        </div>
-                        </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-fun">
-                            <i class="icofont icofont-users-alt-5"></i>
-                            <div class="content">
-                                <span class="counter">350</span>
-                                <p>Qualified Nurses</p> </div>
-                        </div>
-                        </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-fun">
-                            <i class="icofont-simple-smile"></i>
-                            <div class="content">
-                                <span class="counter">98</span> <p>Client Satisfaction %</p> </div>
-                        </div>
-                        </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-fun">
-                             <i class="icofont icofont-badge"></i>
-                            <div class="content">
-                                <span class="counter">12</span>
-                                <p>Years of Experience</p>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <section class="why-choose section" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Your Reliable Partner in Healthcare Staffing</h2> <img src="img/section-img.png" alt="#">
-                             <p>Discover the Central Alliance Care difference for your facility or your nursing career.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6 col-12">
-                        <div class="choose-left">
-                            <h3>Who We Are</h3>
-                             <p>Central Alliance Care is a premier nursing agency based in Singleton Heights, NSW, dedicated to supplying exceptional nursing talent to healthcare providers across the Hunter Valley region and beyond.</p>
-                            <p>We pride ourselves on our responsive service, quality placements, and building strong relationships with both our clients and our valued nursing staff.</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <ul class="list">
-                                         <li><i class="fa fa-caret-right"></i>Local Hunter Valley Focus</li>
-                                        <li><i class="fa fa-caret-right"></i>Commitment to Quality Care</li>
-                                        <li><i class="fa fa-caret-right"></i>Responsive & Reliable Service</li>
-                                    </ul>
+                        <div class="hero-content">
+                            <div class="hero-badge">
+                                <span class="dot"></span>
+                                Australia's Healthcare Staffing Platform
+                            </div>
+                            <h1>Connect. Book. <span class="highlight">Care.</span><br>The Smarter Way to Staff.</h1>
+                            <p>The marketplace where healthcare workers find shifts and care companies find qualified staff. NDIS, aged care, allied health &mdash; all in one platform.</p>
+                            <div class="hero-buttons">
+                                <a href="register.html" class="btn-app btn-app-primary btn-app-lg">
+                                    <i class="fa fa-user-plus"></i> Join as Worker
+                                </a>
+                                <a href="register.html" class="btn-app btn-app-white btn-app-lg">
+                                    <i class="fa fa-building"></i> List Your Company
+                                </a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="hero-stat">
+                                    <div class="number">500+</div>
+                                    <div class="label">Care Workers</div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <ul class="list">
-                                         <li><i class="fa fa-caret-right"></i>Supportive Nurse Environment</li>
-                                        <li><i class="fa fa-caret-right"></i>Wide Range of Opportunities</li>
-                                        <li><i class="fa fa-caret-right"></i>Compliance Assured</li>
-                                    </ul>
+                                <div class="hero-stat">
+                                    <div class="number">120+</div>
+                                    <div class="label">Companies</div>
+                                </div>
+                                <div class="hero-stat">
+                                    <div class="number">4.8</div>
+                                    <div class="label">Avg Rating</div>
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                     <div class="col-lg-6 col-12">
-                        <div class="choose-right">
-                            <div class="video-image">
-                                <div class="promo-video">
-                                    <div class="waves-block">
-                                        <div class="waves wave-1"></div>
-                                        <div class="waves wave-2"></div>
-                                        <div class="waves wave-3"></div>
+                        <div class="hero-mockup">
+                            <!-- Floating Badges -->
+                            <div class="floating-badge badge-top-right">
+                                <div class="badge-icon green">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <span class="badge-text">Shift Booked!</span>
+                                    <span class="badge-sub">Aged Care - Morning</span>
+                                </div>
+                            </div>
+                            <div class="floating-badge badge-bottom-left">
+                                <div class="badge-icon blue">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div>
+                                    <span class="badge-text">New Review</span>
+                                    <span class="badge-sub">5.0 - Excellent care!</span>
+                                </div>
+                            </div>
+
+                            <!-- Phone Mockup -->
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="phone-screen-content">
+                                        <div class="screen-header">
+                                            <h4>Browse Workers</h4>
+                                            <i class="fa fa-sliders" style="color: var(--primary);"></i>
+                                        </div>
+                                        <div class="screen-search">
+                                            <i class="fa fa-search"></i>
+                                            Search by role, location...
+                                        </div>
+                                        <div class="worker-card-mini">
+                                            <div class="avatar" style="background: linear-gradient(135deg, #4F46E5, #818CF8);">SJ</div>
+                                            <div class="info">
+                                                <h5>Sarah Johnson</h5>
+                                                <span>Registered Nurse &bull; 8yr exp</span>
+                                            </div>
+                                            <div class="rating"><i class="fa fa-star"></i> 4.9</div>
+                                        </div>
+                                        <div class="worker-card-mini">
+                                            <div class="avatar" style="background: linear-gradient(135deg, #06B6D4, #10B981);">MT</div>
+                                            <div class="info">
+                                                <h5>Michael Torres</h5>
+                                                <span>Support Worker &bull; 5yr exp</span>
+                                            </div>
+                                            <div class="rating"><i class="fa fa-star"></i> 4.8</div>
+                                        </div>
+                                        <div class="worker-card-mini">
+                                            <div class="avatar" style="background: linear-gradient(135deg, #F59E0B, #EF4444);">AL</div>
+                                            <div class="info">
+                                                <h5>Amy Liu</h5>
+                                                <span>Occupational Therapist &bull; 6yr</span>
+                                            </div>
+                                            <div class="rating"><i class="fa fa-star"></i> 5.0</div>
+                                        </div>
+                                        <div class="worker-card-mini">
+                                            <div class="avatar" style="background: linear-gradient(135deg, #8B5CF6, #EC4899);">DK</div>
+                                            <div class="info">
+                                                <h5>David Kim</h5>
+                                                <span>AIN / Carer &bull; 3yr exp</span>
+                                            </div>
+                                            <div class="rating"><i class="fa fa-star"></i> 4.7</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <img src="img/why-choose-us-nurses.jpg" alt="Team of nurses">
-                                </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <section class="call-action overlay" data-stellar-background-ratio="0.5">
-             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-12">
-                        <div class="content">
-                             <h2>Need Nursing Staff Urgently? Call <a href="tel:+61400000000" style="color:white;">+61 400 000 000</a></h2>
-                             <p>Contact our friendly team 24/7 for immediate assistance with your staffing needs.</p>
-                            <div class="button">
-                                <a href="contact.html" class="btn">Contact Now</a>
-                                <a href="service.html" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="portfolio section" >
+
+        <!-- ==================== TRUST BAR ==================== -->
+        <section class="trust-section">
+            <div class="container">
+                <p>Trusted Across the Care Sector</p>
+                <div class="trust-logos">
+                    <span>NDIS Providers</span>
+                    <span>Aged Care Facilities</span>
+                    <span>Allied Health Clinics</span>
+                    <span>Disability Services</span>
+                    <span>Advocacy Groups</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== HOW IT WORKS ==================== -->
+        <section class="how-it-works section-padding" id="how-it-works">
+            <div class="container">
+                <div class="app-section-header">
+                    <span class="badge-label">How It Works</span>
+                    <h2>Get Started in Minutes</h2>
+                    <p>Whether you're a care worker looking for shifts or a company needing staff, we make it simple.</p>
+                </div>
+
+                <!-- Tabs -->
+                <div class="hiw-tabs">
+                    <button class="hiw-tab-btn active" data-tab="workers-flow">For Workers</button>
+                    <button class="hiw-tab-btn" data-tab="companies-flow">For Companies</button>
+                </div>
+
+                <!-- Workers Flow -->
+                <div class="hiw-tab-content active" id="workers-flow">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-user-plus"></i>
+                                </div>
+                                <div class="hiw-step-number">1</div>
+                                <h4>Create Profile</h4>
+                                <p>Sign up and build your professional profile with qualifications, experience, and availability.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <div class="hiw-step-number">2</div>
+                                <h4>Browse Shifts</h4>
+                                <p>Explore available shifts from NDIS providers, aged care homes, hospitals, and allied health companies.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                </div>
+                                <div class="hiw-step-number">3</div>
+                                <h4>Book &amp; Confirm</h4>
+                                <p>Apply for shifts that match your schedule. Get confirmed instantly or after company review.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="hiw-step-number">4</div>
+                                <h4>Work &amp; Get Rated</h4>
+                                <p>Complete your shift, earn ratings, build your reputation, and grow your career.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Companies Flow -->
+                <div class="hiw-tab-content" id="companies-flow">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-building"></i>
+                                </div>
+                                <div class="hiw-step-number">1</div>
+                                <h4>Register Company</h4>
+                                <p>Create your company profile with service areas, requirements, and team preferences.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-plus-circle"></i>
+                                </div>
+                                <div class="hiw-step-number">2</div>
+                                <h4>Post Shifts</h4>
+                                <p>List available shifts with dates, times, required qualifications, and pay rates.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="hiw-step-number">3</div>
+                                <h4>Review Workers</h4>
+                                <p>Browse verified worker profiles, check credentials and ratings, then approve bookings.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="hiw-step">
+                                <div class="hiw-step-icon">
+                                    <i class="fa fa-line-chart"></i>
+                                </div>
+                                <div class="hiw-step-number">4</div>
+                                <h4>Manage &amp; Rate</h4>
+                                <p>Track shifts on your dashboard, rate workers, and build a reliable staffing network.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== STATS BAR ==================== -->
+        <section class="stats-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Partnering Across Healthcare Settings</h2> <img src="img/section-img.png" alt="#">
-                             <p>We provide skilled nursing professionals to diverse environments, ensuring quality care delivery.</p>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Verified Workers</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="stat-item">
+                            <div class="stat-number">120+</div>
+                            <div class="stat-label">Care Companies</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="stat-item">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Shifts Completed</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="stat-item">
+                            <div class="stat-number">4.8</div>
+                            <div class="stat-label">Average Rating</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="owl-carousel portfolio-slider">
-                             <div class="single-pf">
-                                <img src="img/setting-hospital.jpg" alt="Hospital Setting">
-                                </div>
-                            <div class="single-pf">
-                                <img src="img/setting-aged-care.jpg" alt="Aged Care Setting">
-                                </div>
-                            <div class="single-pf">
-                                <img src="img/setting-community.jpg" alt="Community Care Setting">
-                                </div>
-                            <div class="single-pf">
-                                <img src="img/setting-clinic.jpg" alt="Clinic Setting">
-                                </div>
-                             <div class="single-pf">
-                                <img src="img/setting-home-care.jpg" alt="Home Care Setting">
-                                </div>
-                             <div class="single-pf">
-                                <img src="img/setting-specialist.jpg" alt="Specialist Unit Setting">
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
         </section>
-        <section class="services section">
+
+        <!-- ==================== TWO USER TYPES ==================== -->
+        <section class="user-types section-padding" id="user-types">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Our Comprehensive Nursing Services</h2> <img src="img/section-img.png" alt="#">
-                             <p>Tailored staffing solutions to meet the demands of various healthcare environments.</p>
-                        </div>
-                    </div>
+                <div class="app-section-header">
+                    <span class="badge-label">Who It's For</span>
+                    <h2>Built for Workers &amp; Companies</h2>
+                    <p>Two dedicated experiences designed for healthcare professionals and care organisations.</p>
                 </div>
+
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-service">
-                             <i class="icofont icofont-hospital"></i>
-                            <h4><a href="service-details.html#facility">Facility Staffing</a></h4> <p>Providing RNs, ENs, and AINs for casual, contract, and permanent roles in hospitals and aged care.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-service">
-                            <i class="icofont icofont-nurse-alt"></i>
-                            <h4><a href="service-details.html#agedcare">Aged Care Specialists</a></h4> <p>Supplying experienced staff dedicated to providing compassionate care in residential aged care.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-service">
-                            <i class="icofont icofont-heartbeat"></i> <h4><a href="service-details.html#specialty">Specialty Nursing</a></h4> <p>Connecting you with skilled nurses in critical care, mental health, paediatrics, and other specialties.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-service">
-                            <i class="icofont icofont-home"></i>
-                            <h4><a href="service-details.html#homecare">In-Home Care</a></h4> <p>Delivering professional nursing support and personal care within the comfort of home.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-service">
-                            <i class="icofont icofont-runner-alt-1"></i>
-                            <h4><a href="service-details.html#disability">Disability Support</a></h4> <p>Providing qualified support workers and nurses for NDIS participants and disability services.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-service">
-                            <i class="icofont icofont-search-job"></i>
-                            <h4><a href="service-details.html#recruitment">Permanent Recruitment</a></h4> <p>Assisting healthcare providers find and recruit qualified long-term staff for their teams.</p>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <section class="section testimonials overlay" data-stellar-background-ratio="0.5">
-             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>What Our Clients & Nurses Say</h2> <img src="img/section-img2.png" alt="#">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="owl-carousel testimonial-slider">
-                             <div class="single-testimonial">
-                                <img src="img/client-1.jpg" alt="Client Testimonial">
-                                <p>"Central Alliance Care are always reliable and provide excellent, professional nursing staff for our facility."</p>
-                                <h4 class="name">[Facility Manager Name], [Facility Name]</h4>
+                    <!-- Workers Card -->
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="user-type-card worker-card">
+                            <div class="user-type-icon">
+                                <i class="fa fa-user-md"></i>
                             </div>
-                            <div class="single-testimonial">
-                                <img src="img/nurse-1.jpg" alt="Nurse Testimonial">
-                                <p>"Great agency to work for! The team are supportive, and they offer good shifts that fit my schedule."</p>
-                                <h4 class="name">[Nurse Name], Registered Nurse</h4>
+                            <h3>For Care Workers</h3>
+                            <p class="subtitle">Nurses, AINs, Support Workers, Allied Health Professionals &amp; more</p>
+
+                            <div class="roles-grid">
+                                <span class="role-tag">Registered Nurses</span>
+                                <span class="role-tag">Enrolled Nurses</span>
+                                <span class="role-tag">AINs / Carers</span>
+                                <span class="role-tag">Support Workers</span>
+                                <span class="role-tag">Occupational Therapists</span>
+                                <span class="role-tag">Physiotherapists</span>
+                                <span class="role-tag">Speech Pathologists</span>
+                                <span class="role-tag">Psychologists</span>
+                                <span class="role-tag">Social Workers</span>
+                                <span class="role-tag">Disability Workers</span>
                             </div>
-                            <div class="single-testimonial">
-                                <img src="img/client-2.jpg" alt="Client Testimonial">
-                                <p>"Their responsiveness to urgent requests is fantastic. Quality staff delivered promptly."</p>
-                                <h4 class="name">[DON Name], [Facility Name]</h4>
-                            </div>
-                            <div class="single-testimonial">
-                                <img src="img/nurse-2.jpg" alt="Nurse Testimonial">
-                                <p>"I appreciate the communication and the variety of work available through Central Alliance Care."</p>
-                                <h4 class="name">[Nurse Name], Enrolled Nurse</h4>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="departments section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Nursing Specialties & Service Areas</h2> <img src="img/section-img.png" alt="#">
-                             <p>We provide skilled professionals across various healthcare domains.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="department-tab">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#t-tab1" role="tab"><i class="icofont-nurse-alt"></i><span class="first">Aged Care</span><span class="second">Residential</span></a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab2" role="tab"><i class="icofont-hospital"></i><span class="first">Acute Care</span><span class="second">Hospitals</span></a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab3" role="tab"><i class="icofont-brain-alt"></i><span class="first">Mental Health</span><span class="second">Support</span></a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab4" role="tab"><i class="icofont-home"></i><span class="first">Community</span><span class="second">Home Care</span></a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab5" role="tab"><i class="icofont-runner-alt-1"></i><span class="first">Disability</span><span class="second">NDIS</span></a></li>
+
+                            <ul class="user-type-features">
+                                <li><i class="fa fa-check-circle"></i> Build a professional profile showcasing qualifications &amp; experience</li>
+                                <li><i class="fa fa-check-circle"></i> Set your availability and preferred work areas</li>
+                                <li><i class="fa fa-check-circle"></i> Browse and apply for shifts across multiple companies</li>
+                                <li><i class="fa fa-check-circle"></i> Earn ratings and build your professional reputation</li>
+                                <li><i class="fa fa-check-circle"></i> Get notified of new shifts matching your profile</li>
+                                <li><i class="fa fa-check-circle"></i> Message companies directly through the platform</li>
                             </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="t-tab1" role="tabpanel">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="department-left">
-                                                <h3>Aged Care Staffing</h3>
-                                                 <p class="p1">“Providing compassionate and experienced RNs, ENs, and AINs for residential aged care facilities.”</p>
-                                                <p>Our staff are skilled in dementia care, palliative support, medication administration, and meeting the complex needs of elderly residents.</p>
-                                                <ul class="list">
-                                                    <li><i class="fa fa-check"></i>Dedicated Aged Care Team</li>
-                                                    <li><i class="fa fa-check"></i>Focus on Resident Dignity</li>
-                                                    <li><i class="fa fa-check"></i>Short & Long Term Cover</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="department-right">
-                                                 <img src="img/dept-aged-care.jpg" alt="Aged Care Setting">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="t-tab2" role="tabpanel">
-                                     <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="department-left">
-                                                <h3>Acute Care & Hospital Staffing</h3>
-                                                 <p class="p1">“Supplying qualified nurses for various hospital settings including general wards, ED, ICU, and theatres.”</p>
-                                                <p>We provide reliable staffing solutions to help hospitals manage fluctuations in demand and maintain optimal patient care levels.</p>
-                                                <ul class="list">
-                                                    <li><i class="fa fa-check"></i>General & Specialist Nurses</li>
-                                                    <li><i class="fa fa-check"></i>Critical Care Experienced Staff</li>
-                                                    <li><i class="fa fa-check"></i>Flexible Placement Options</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="department-right">
-                                                <img src="img/dept-hospital.jpg" alt="Hospital Ward">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="t-tab3" role="tabpanel">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="department-left">
-                                                <h3>Mental Health Nursing</h3>
-                                                 <p class="p1">“Providing skilled and empathetic mental health nurses for inpatient units, community teams, and specialist services.”</p>
-                                                <p>Our nurses have experience in mental health assessment, therapeutic interventions, and supporting individuals with diverse mental health conditions.</p>
-                                                <ul class="list">
-                                                    <li><i class="fa fa-check"></i>Experienced Mental Health RNs</li>
-                                                    <li><i class="fa fa-check"></i>Community & Inpatient Settings</li>
-                                                    <li><i class="fa fa-check"></i>Recovery-Oriented Approach</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="department-right">
-                                                <img src="img/dept-mental-health.jpg" alt="Mental Health Support">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="t-tab4" role="tabpanel">
-                                     <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="department-left">
-                                                <h3>Community & Home Care</h3>
-                                                <p class="p1">“Delivering professional nursing and support services to individuals in their own homes and community settings.”</p>
-                                                <p>Services include wound management, medication assistance, chronic disease support, post-hospital care, and personal care tailored to individual needs.</p>
-                                                <ul class="list">
-                                                    <li><i class="fa fa-check"></i>Skilled Community Nurses</li>
-                                                    <li><i class="fa fa-check"></i>Personalized Care Plans</li>
-                                                    <li><i class="fa fa-check"></i>Promoting Independence</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="department-right">
-                                                <img src="img/dept-community-care.jpg" alt="Community Nurse Visit">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="t-tab5" role="tabpanel">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="department-left">
-                                                <h3>Disability Support</h3>
-                                                <p class="p1">“Providing qualified support workers and nurses experienced in supporting NDIS participants and individuals with disabilities.”</p>
-                                                <p>We focus on enabling individuals to achieve their goals, enhance their skills, and live more independently within the community.</p>
-                                                <ul class="list">
-                                                    <li><i class="fa fa-check"></i>NDIS Registered Provider Support</li>
-                                                    <li><i class="fa fa-check"></i>Person-Centred Care</li>
-                                                    <li><i class="fa fa-check"></i>Experienced Support Staff</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="department-right">
-                                                 <img src="img/dept-disability.jpg" alt="Disability Support Worker">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
+
+                            <a href="register.html" class="btn-app btn-app-primary">
+                                <i class="fa fa-user-plus"></i> Sign Up as Worker
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="pricing-table section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Transparent Service Rates & Options</h2> <img src="img/section-img.png" alt="#">
-                             <p>Competitive and clear pricing for our flexible nursing agency services.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-12">
-                        <div class="single-table">
-                            <div class="table-head">
-                                <div class="icon">
-                                    <i class="icofont icofont-wall-clock"></i>
-                                </div>
-                                <h4 class="title">Casual Staffing</h4> <div class="price">
-                                     <p class="amount">Contact Us<span>/ Per Hour</span></p>
-                                </div>
+
+                    <!-- Companies Card -->
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="user-type-card company-card">
+                            <div class="user-type-icon">
+                                <i class="fa fa-building"></i>
                             </div>
-                            <ul class="table-list">
-                                <li><i class="icofont icofont-ui-check"></i>RN / EN / AIN Cover</li>
-                                <li><i class="icofont icofont-ui-check"></i>Short Notice Availability</li>
-                                <li><i class="icofont icofont-ui-check"></i>All Inclusive Rate</li>
-                                <li class="cross"><i class="icofont icofont-ui-close"></i>Recruitment Fee</li>
-                                <li class="cross"><i class="icofont icofont-ui-close"></i>Minimum Contract</li>
+                            <h3>For Care Companies</h3>
+                            <p class="subtitle">NDIS Providers, Aged Care, Advocacy, Allied Health &amp; more</p>
+
+                            <div class="roles-grid">
+                                <span class="role-tag">NDIS Providers</span>
+                                <span class="role-tag">Aged Care Facilities</span>
+                                <span class="role-tag">Disability Services</span>
+                                <span class="role-tag">Advocacy Teams</span>
+                                <span class="role-tag">Allied Health Clinics</span>
+                                <span class="role-tag">Home Care Providers</span>
+                                <span class="role-tag">Hospitals</span>
+                                <span class="role-tag">Mental Health Services</span>
+                                <span class="role-tag">Rehab Centres</span>
+                                <span class="role-tag">Community Services</span>
+                            </div>
+
+                            <ul class="user-type-features">
+                                <li><i class="fa fa-check-circle"></i> Create a company profile with your service areas &amp; specialties</li>
+                                <li><i class="fa fa-check-circle"></i> Post shifts and set requirements for each role</li>
+                                <li><i class="fa fa-check-circle"></i> Browse verified worker profiles with credentials &amp; ratings</li>
+                                <li><i class="fa fa-check-circle"></i> Manage bookings with an intuitive dashboard</li>
+                                <li><i class="fa fa-check-circle"></i> Rate workers and build your preferred team</li>
+                                <li><i class="fa fa-check-circle"></i> Set availability calendars for recurring needs</li>
                             </ul>
-                            <div class="table-bottom">
-                                <a class="btn" href="contact.html">Request Rates</a>
-                            </div>
-                            </div>
+
+                            <a href="register.html" class="btn-app btn-app-sm" style="background: linear-gradient(135deg, #06B6D4, #10B981); color:#fff; box-shadow: 0 4px 15px rgba(6,182,212,0.4);">
+                                <i class="fa fa-building"></i> Register Your Company
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-12">
-                        <div class="single-table">
-                            <div class="table-head">
-                                <div class="icon">
-                                     <i class="icofont icofont-search-job"></i>
-                                </div>
-                                <h4 class="title">Permanent Recruitment</h4> <div class="price">
-                                    <p class="amount">Inquire<span>/ Placement Fee</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FEATURES SECTION ==================== -->
+        <section class="features-section section-padding" id="features">
+            <div class="container">
+                <div class="app-section-header">
+                    <span class="badge-label">Platform Features</span>
+                    <h2>Everything You Need in One Place</h2>
+                    <p>Powerful tools designed to make healthcare staffing effortless for everyone.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-card-icon fc-purple">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <h4>Smart Booking System</h4>
+                            <p>Interactive calendar with real-time availability. Workers set when they're free, companies post shifts &mdash; matching happens automatically.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-card-icon fc-amber">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h4>Two-Way Ratings</h4>
+                            <p>Workers rate companies. Companies rate workers. Build trust with transparent reviews visible to the entire community.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-card-icon fc-green">
+                                <i class="fa fa-shield"></i>
+                            </div>
+                            <h4>Verified Credentials</h4>
+                            <p>Upload and verify qualifications, police checks, NDIS Worker Screening, vaccinations, and professional registrations.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-card-icon fc-cyan">
+                                <i class="fa fa-comments"></i>
+                            </div>
+                            <h4>In-App Messaging</h4>
+                            <p>Communicate directly with workers or companies. Discuss shift details, ask questions, and coordinate seamlessly.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-card-icon fc-indigo">
+                                <i class="fa fa-dashboard"></i>
+                            </div>
+                            <h4>Personalised Dashboard</h4>
+                            <p>Track upcoming shifts, manage bookings, view earnings, and monitor your activity all from one central hub.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-card-icon fc-red">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <h4>Smart Notifications</h4>
+                            <p>Get alerted for new matching shifts, booking confirmations, messages, and rating updates in real time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BOOKING SYSTEM SECTION ==================== -->
+        <section class="booking-section section-padding" id="booking">
+            <div class="container">
+                <div class="app-section-header">
+                    <span class="badge-label">Booking System</span>
+                    <h2>Shifts &amp; Appointments Made Simple</h2>
+                    <p>An interactive booking experience for both workers and companies.</p>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="booking-preview">
+                            <div class="booking-preview-header">
+                                <h4><i class="fa fa-calendar"></i>&nbsp; February 2026</h4>
+                                <div class="booking-nav">
+                                    <button aria-label="Previous month"><i class="fa fa-chevron-left"></i></button>
+                                    <button aria-label="Next month"><i class="fa fa-chevron-right"></i></button>
                                 </div>
                             </div>
-                            <ul class="table-list">
-                                <li><i class="icofont icofont-ui-check"></i>Source & Screen Candidates</li>
-                                <li><i class="icofont icofont-ui-check"></i>Manage Interview Process</li>
-                                <li><i class="icofont icofont-ui-check"></i>Reference & Compliance Checks</li>
-                                <li><i class="icofont icofont-ui-check"></i>Success-Based Fee</li>
-                                <li class="cross"><i class="icofont icofont-ui-close"></i>Hourly Billing</li>
+                            <div class="calendar-grid">
+                                <div class="calendar-days-header">
+                                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                                </div>
+                                <div class="calendar-days">
+                                    <div class="calendar-day empty"></div>
+                                    <div class="calendar-day">1</div>
+                                    <div class="calendar-day has-slots">2</div>
+                                    <div class="calendar-day has-slots">3</div>
+                                    <div class="calendar-day">4</div>
+                                    <div class="calendar-day has-slots">5</div>
+                                    <div class="calendar-day">6</div>
+                                    <div class="calendar-day">7</div>
+                                    <div class="calendar-day has-slots">8</div>
+                                    <div class="calendar-day has-slots">9</div>
+                                    <div class="calendar-day has-slots">10</div>
+                                    <div class="calendar-day today">11</div>
+                                    <div class="calendar-day has-slots">12</div>
+                                    <div class="calendar-day">13</div>
+                                    <div class="calendar-day">14</div>
+                                    <div class="calendar-day has-slots">15</div>
+                                    <div class="calendar-day has-slots">16</div>
+                                    <div class="calendar-day has-slots">17</div>
+                                    <div class="calendar-day has-slots">18</div>
+                                    <div class="calendar-day">19</div>
+                                    <div class="calendar-day">20</div>
+                                    <div class="calendar-day has-slots">21</div>
+                                    <div class="calendar-day has-slots">22</div>
+                                    <div class="calendar-day">23</div>
+                                    <div class="calendar-day has-slots">24</div>
+                                    <div class="calendar-day has-slots">25</div>
+                                    <div class="calendar-day">26</div>
+                                    <div class="calendar-day has-slots">27</div>
+                                    <div class="calendar-day">28</div>
+                                </div>
+                            </div>
+                            <div class="time-slots">
+                                <h5>Available Shifts &mdash; Wed, 11 Feb</h5>
+                                <div class="slot-grid">
+                                    <div class="time-slot">6:00 AM - 2:00 PM</div>
+                                    <div class="time-slot selected">7:00 AM - 3:00 PM</div>
+                                    <div class="time-slot">2:00 PM - 10:00 PM</div>
+                                    <div class="time-slot">10:00 PM - 6:00 AM</div>
+                                    <div class="time-slot unavailable">8:00 AM - 4:00 PM</div>
+                                    <div class="time-slot">3:00 PM - 11:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="booking-info-content">
+                            <h3>Real-Time Availability &amp; Shift Management</h3>
+                            <p>Both workers and companies manage their own calendars. When availability matches a shift, booking is just a click away.</p>
+
+                            <ul class="booking-features-list">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Workers set weekly availability &amp; preferred hours
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Companies post shifts with specific requirements
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Smart matching suggests workers for open shifts
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Instant booking confirmation or approval workflow
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Recurring shifts for regular staffing needs
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Calendar syncs with mobile notifications
+                                </li>
                             </ul>
-                            <div class="table-bottom">
-                                <a class="btn" href="contact.html">Discuss Needs</a>
-                            </div>
-                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-12">
-                        <div class="single-table">
-                            <div class="table-head">
-                                <div class="icon">
-                                    <i class="icofont icofont-home"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== RATINGS & REVIEWS ==================== -->
+        <section class="ratings-section section-padding" id="ratings">
+            <div class="container">
+                <div class="app-section-header">
+                    <span class="badge-label">Ratings &amp; Reviews</span>
+                    <h2>Transparent Two-Way Reviews</h2>
+                    <p>Both workers and companies rate each other, building trust across the platform.</p>
+                </div>
+
+                <div class="row">
+                    <!-- Rating Overview -->
+                    <div class="col-lg-4 col-12 mb-4">
+                        <div class="rating-card" style="border: none; background: var(--gray-50);">
+                            <div class="rating-overview">
+                                <div class="rating-big-number">4.8</div>
+                                <div class="rating-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
-                                <h4 class="title">Home Care Support</h4> <div class="price">
-                                    <p class="amount">From $XX<span>/ Per Hour</span></p>
+                                <div class="total-reviews">Based on 2,340 reviews</div>
+
+                                <div class="rating-bar">
+                                    <span class="bar-label">5</span>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 72%;"></div></div>
+                                    <span class="bar-count">72%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="bar-label">4</span>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 20%;"></div></div>
+                                    <span class="bar-count">20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="bar-label">3</span>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 5%;"></div></div>
+                                    <span class="bar-count">5%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="bar-label">2</span>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 2%;"></div></div>
+                                    <span class="bar-count">2%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="bar-label">1</span>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div>
+                                    <span class="bar-count">1%</span>
                                 </div>
                             </div>
-                            <ul class="table-list">
-                                <li><i class="icofont icofont-ui-check"></i>Nursing & Personal Care</li>
-                                <li><i class="icofont icofont-ui-check"></i>Tailored Care Packages</li>
-                                <li><i class="icofont icofont-ui-check"></i>NDIS & Private Clients</li>
-                                <li><i class="icofont icofont-ui-check"></i>Flexible Visit Times</li>
-                                <li><i class="icofont icofont-ui-check"></i>Regular Communication</li>
+                        </div>
+                    </div>
+
+                    <!-- Worker Rating Example -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="rating-card">
+                            <div style="font-size:12px; font-weight:600; color:var(--primary); text-transform:uppercase; letter-spacing:1px; margin-bottom:16px;">Company rates Worker</div>
+                            <div class="rating-card-header">
+                                <div class="rating-avatar purple">SJ</div>
+                                <div>
+                                    <div class="name">Sarah Johnson</div>
+                                    <div class="role">Registered Nurse</div>
+                                </div>
+                            </div>
+                            <div class="rating-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="review-text">"Sarah was exceptional. She arrived on time, demonstrated excellent clinical skills, and the residents loved her. Would book again in a heartbeat."</p>
+                            <p class="review-meta">Sunrise Aged Care &bull; 3 days ago</p>
+                        </div>
+                    </div>
+
+                    <!-- Company Rating Example -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="rating-card">
+                            <div style="font-size:12px; font-weight:600; color:var(--secondary); text-transform:uppercase; letter-spacing:1px; margin-bottom:16px;">Worker rates Company</div>
+                            <div class="rating-card-header">
+                                <div class="rating-avatar cyan">SC</div>
+                                <div>
+                                    <div class="name">Sunrise Care</div>
+                                    <div class="role">NDIS &amp; Aged Care Provider</div>
+                                </div>
+                            </div>
+                            <div class="rating-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star empty"></i>
+                            </div>
+                            <p class="review-text">"Well-organised facility with supportive management. Clear shift instructions provided. Good team environment. Would recommend to other workers."</p>
+                            <p class="review-meta">Michael Torres &bull; 1 week ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CTA SECTION ==================== -->
+        <section class="cta-section section-padding" id="cta">
+            <div class="container">
+                <div class="app-section-header" style="margin-bottom:48px;">
+                    <span class="badge-label" style="background:rgba(255,255,255,0.1); color:#fff;">Get Started Today</span>
+                    <h2 style="color:#fff;">Ready to Transform Healthcare Staffing?</h2>
+                    <p style="color:rgba(255,255,255,0.7);">Join the platform that's changing how care workers and companies connect.</p>
+                </div>
+
+                <div class="row">
+                    <!-- Worker CTA -->
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="cta-card">
+                            <div class="cta-card-icon">
+                                <i class="fa fa-user-md"></i>
+                            </div>
+                            <h3>I'm a Care Worker</h3>
+                            <p>Find flexible shifts, build your reputation, and take control of your healthcare career.</p>
+                            <ul class="cta-features">
+                                <li><i class="fa fa-check"></i> Free to join and browse shifts</li>
+                                <li><i class="fa fa-check"></i> Choose your own hours and companies</li>
+                                <li><i class="fa fa-check"></i> Verified profile boosts your visibility</li>
+                                <li><i class="fa fa-check"></i> Track your earnings and shift history</li>
                             </ul>
-                            <div class="table-bottom">
-                                <a class="btn" href="contact.html">Request Quote</a>
-                            </div>
-                            </div>
-                    </div>
-                    </div>
-            </div>
-        </section>
-        <section id="team" class="team section overlay" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Our Experienced Management Team</h2> <img src="img/section-img2.png" alt="#">
-                             <p>Dedicated professionals ensuring quality service and support for clients and staff.</p>
+                            <a href="register.html" class="btn-app btn-app-white btn-app-lg" style="width:100%; justify-content:center;">
+                                Sign Up as Worker <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12" data-tilt>
-                        <div class="single-team">
-                            <div class="t-head">
-                                <img src="img/team-director.jpg" alt="Director Photo">
-                                <div class="t-icon">
-                                    <a href="appointment.html" class="btn">Contact</a>
-                                </div>
+
+                    <!-- Company CTA -->
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="cta-card">
+                            <div class="cta-card-icon">
+                                <i class="fa fa-building"></i>
                             </div>
-                            <div class="t-bottom">
-                                <p>Agency Director</p> <h2><a href="#">[Director Name]</a></h2> </div>
-                        </div>
-                        </div>
-                    <div class="col-lg-3 col-md-6 col-12 " data-tilt>
-                        <div class="single-team">
-                            <div class="t-head">
-                                <img src="img/team-clinical-manager.jpg" alt="Clinical Manager Photo">
-                                <div class="t-icon">
-                                     <a href="appointment.html" class="btn">Contact</a>
-                                </div>
-                            </div>
-                            <div class="t-bottom">
-                                <p>Clinical Manager</p> <h2><a href="#">[Manager Name]</a></h2> </div>
-                            </div>
-                        </div>
-                    <div class="col-lg-3 col-md-6 col-12 " data-tilt>
-                        <div class="single-team">
-                            <div class="t-head">
-                                <img src="img/team-recruitment.jpg" alt="Recruitment Lead Photo">
-                                <div class="t-icon">
-                                     <a href="appointment.html" class="btn">Contact</a>
-                                </div>
-                            </div>
-                            <div class="t-bottom">
-                                <p>Recruitment Lead</p> <h2><a href="#">[Lead Name]</a></h2> </div>
-                            </div>
-                        </div>
-                    <div class="col-lg-3 col-md-6 col-12" data-tilt>
-                        <div class="single-team">
-                            <div class="t-head">
-                                <img src="img/team-coordinator.jpg" alt="Coordinator Photo">
-                                <div class="t-icon">
-                                     <a href="appointment.html" class="btn">Contact</a>
-                                </div>
-                            </div>
-                            <div class="t-bottom">
-                                <p>Client Coordinator</p> <h2><a href="#">[Coordinator Name]</a></h2> </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <section class="blog section" id="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Keep Up with Our Agency News & Insights</h2> <img src="img/section-img.png" alt="#">
-                             <p>Updates, resources, and perspectives on nursing and healthcare staffing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-news">
-                            <div class="news-head">
-                                <img src="img/blog-1.jpg" alt="Blog Image 1">
-                            </div>
-                            <div class="news-body">
-                                <div class="news-content">
-                                    <div class="date">19 Apr, 2025</div>
-                                    <h2><a href="blog-single.html">Navigating Agency Work: Tips for Nurses</a></h2>
-                                    <p class="text">Making the most of flexibility and opportunities as an agency nurse in the Hunter Valley...</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-news">
-                            <div class="news-head">
-                                <img src="img/blog-2.jpg" alt="Blog Image 2">
-                            </div>
-                            <div class="news-body">
-                                <div class="news-content">
-                                    <div class="date">12 Apr, 2025</div>
-                                    <h2><a href="blog-single.html">Addressing Staff Shortages in Aged Care</a></h2>
-                                    <p class="text">How strategic partnerships with nursing agencies can help facilities maintain quality care...</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-news">
-                            <div class="news-head">
-                                <img src="img/blog-3.jpg" alt="Blog Image 3">
-                            </div>
-                            <div class="news-body">
-                                <div class="news-content">
-                                    <div class="date">05 Apr, 2025</div>
-                                    <h2><a href="blog-single.html">Welcome to the Central Alliance Care Blog!</a></h2>
-                                    <p class="text">Introducing our new space for sharing insights, news, and resources with our community...</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <div class="clients overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-12">
-                        <div class="owl-carousel clients-slider">
-                             <div class="single-clients">
-                                <img src="img/client-logo-placeholder-1.png" alt="Client Logo 1">
-                            </div>
-                             <div class="single-clients">
-                                <img src="img/client-logo-placeholder-2.png" alt="Client Logo 2">
-                            </div>
-                             <div class="single-clients">
-                                <img src="img/client-logo-placeholder-3.png" alt="Client Logo 3">
-                            </div>
-                            <div class="single-clients">
-                                <img src="img/client-logo-placeholder-4.png" alt="Client Logo 4">
-                            </div>
-                             <div class="single-clients">
-                                <img src="img/client-logo-placeholder-5.png" alt="Client Logo 5">
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="appointment">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Request Staff or Enquire About Services</h2> <img src="img/section-img.png" alt="#">
-                             <p>Complete the form below, and our team will be in touch shortly.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-12">
-                         <form class="form" action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                        <input name="name" type="text" placeholder="Name / Facility Name" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                        <input name="email" type="email" placeholder="Email" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                        <input name="phone" type="text" placeholder="Phone" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                        <div class="nice-select form-control wide" tabindex="0"><span class="current">Select Service</span>
-                                            <ul class="list">
-                                                <li data-value="1" class="option selected ">Select Service</li>
-                                                <li data-value="2" class="option">Aged Care Staffing</li>
-                                                <li data-value="3" class="option">Hospital Staffing</li>
-                                                <li data-value="4" class="option">Community/Home Care</li>
-                                                <li data-value="5" class="option">Disability Support</li>
-                                                <li data-value="6" class="option">Permanent Recruitment</li>
-                                                <li data-value="7" class="option">General Inquiry</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                         <div class="nice-select form-control wide" tabindex="0"><span class="current">Staff Needed</span>
-                                            <ul class="list">
-                                                <li data-value="1" class="option selected ">Staff Needed</li>
-                                                <li data-value="2" class="option">Registered Nurse (RN)</li>
-                                                <li data-value="3" class="option">Enrolled Nurse (EN)</li>
-                                                <li data-value="4" class="option">AIN / Carer</li>
-                                                <li data-value="5" class="option">Support Worker</li>
-                                                <li data-value="6" class="option">Not Sure / Discuss</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Date Required" id="datepicker">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-12">
-                                    <div class="form-group">
-                                        <textarea name="message" placeholder="Briefly describe your requirements (e.g., shifts, duration, location)..." required></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-5 col-md-4 col-12">
-                                    <div class="form-group">
-                                        <div class="button">
-                                            <button type="submit" class="btn">Submit Request</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 col-md-8 col-12">
-                                     <p>( We'll contact you via phone or email shortly )</p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-6 col-md-12 ">
-                        <div class="appointment-image">
-                             <img src="img/contact-form-image.jpg" alt="Nurse assisting client">
+                            <h3>I'm a Care Company</h3>
+                            <p>Find verified, rated care workers instantly. Fill shifts faster and build your preferred team.</p>
+                            <ul class="cta-features">
+                                <li><i class="fa fa-check"></i> Access a pool of verified professionals</li>
+                                <li><i class="fa fa-check"></i> Post shifts and get applications fast</li>
+                                <li><i class="fa fa-check"></i> Review worker credentials and ratings</li>
+                                <li><i class="fa fa-check"></i> Manage all staffing from one dashboard</li>
+                            </ul>
+                            <a href="register.html" class="btn-app btn-app-accent btn-app-lg" style="width:100%; justify-content:center;">
+                                Register Your Company <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="newsletter section">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-lg-6 col-12"> <div class="subscribe-text ">
-                            <h6>Sign up for newsletter</h6>
-                             <p>Get agency updates, job alerts, and industry news delivered to your inbox.</p>
-                        </div>
-                        </div>
-                    <div class="col-lg-6 col-12"> <div class="subscribe-form ">
-                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                                <input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Your email address'" required="" type="email">
-                                <button class="btn">Subscribe</button>
-                            </form>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer" class="footer ">
-            <div class="footer-top">
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="app-footer">
+            <div class="app-footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-footer">
-                                <h2>About Us</h2>
-                                 <p>Central Alliance Care: Connecting skilled nurses with healthcare opportunities in Singleton Heights and the Hunter Valley.</p>
-                                <ul class="social">
-                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icofont-linkedin"></i></a></li> <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-footer f-link">
-                                <h2>Quick Links</h2>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <ul>
-                                             <li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-                                            <li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-                                            <li><a href="service.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-                                            <li><a href="Nurses.html"><i class="fa fa-caret-right" aria-hidden="true"></i>For Nurses</a></li> <li><a href="blog-grid.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li> </ul>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <ul>
-                                            <li><a href="appointment.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Request Staff</a></li> <li><a href="pricing.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Service Rates</a></li> <li><a href="testimonials.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
-                                            <li><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
-                                            <li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+                                <img src="img/logo.png" alt="CareConnect" style="height:36px;">
+                                <span style="font-size:20px;font-weight:800;color:#fff;">CareConnect</span>
+                            </div>
+                            <p>The healthcare staffing marketplace by Central Alliance Care. Connecting care workers with disability, aged care, and allied health companies across Australia.</p>
+                            <div class="footer-social">
+                                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-footer">
-                                <h2>Open Hours</h2>
-                                 <p>Our Singleton Heights office hours. After-hours line available for urgent needs.</p>
-                                <ul class="time-sidual">
-                                    <li class="day">Monday - Friday <span>8.00am - 5.00pm</span></li>
-                                    <li class="day">Saturday <span>9.00am - 1.00pm</span></li>
-                                    <li class="day">After Hours <span>Ph: [Your Number]</span></li> </ul>
-                            </div>
+                        <div class="col-lg-2 col-md-6 col-6 mb-4">
+                            <h4>Platform</h4>
+                            <ul class="footer-links">
+                                <li><a href="#how-it-works">How It Works</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#booking">Booking</a></li>
+                                <li><a href="#ratings">Reviews</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                            </ul>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-footer">
-                                <h2>Newsletter</h2>
-                                 <p>Subscribe to our newsletter for job alerts, agency updates, and industry news.</p>
-                                <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                                    <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Your email address'" required="" type="email">
-                                    <button class="button"><i class="icofont icofont-paper-plane"></i></button>
+                        <div class="col-lg-2 col-md-6 col-6 mb-4">
+                            <h4>Company</h4>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="blog-grid.html">Blog</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <h4>Get In Touch</h4>
+                            <ul class="footer-links">
+                                <li><i class="fa fa-map-marker" style="width:20px;color:var(--primary-light);"></i> Singleton Heights, NSW, Australia</li>
+                                <li><a href="tel:+61400000000"><i class="fa fa-phone" style="width:20px;color:var(--primary-light);"></i> +61 400 000 000</a></li>
+                                <li><a href="mailto:contact@centralalliancecare.com.au"><i class="fa fa-envelope" style="width:20px;color:var(--primary-light);"></i> contact@centralalliancecare.com.au</a></li>
+                            </ul>
+                            <div style="margin-top:24px;">
+                                <h4>Newsletter</h4>
+                                <form action="mail/mail.php" method="get" target="_blank" style="display:flex;gap:8px;">
+                                    <input type="email" name="email" placeholder="Your email" required style="flex:1;padding:10px 16px;border-radius:var(--radius-full);border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff;font-size:14px;">
+                                    <button type="submit" class="btn-app btn-app-primary btn-app-sm">Subscribe</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="app-footer-bottom">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-12">
-                            <div class="copyright-content">
-                                <p>© Copyright 2025 | Central Alliance Care | All Rights Reserved </p>
-                                </div>
-                        </div>
-                    </div>
+                    <p>&copy; 2025 Central Alliance Care. All Rights Reserved. | CareConnect Healthcare Staffing Platform</p>
                 </div>
             </div>
-            </footer>
+        </footer>
+
+        <!-- ==================== SCRIPTS ==================== -->
         <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-migrate-3.0.0.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
-        <script src="js/easing.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script src="js/jquery.nav.js"></script>
-        <script src="js/slicknav.min.js"></script>
-        <script src="js/jquery.scrollUp.min.js"></script>
-        <script src="js/niceselect.js"></script>
-        <script src="js/tilt.jquery.min.js"></script>
-        <script src="js/owl-carousel.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/steller.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <script>
+            // Header scroll effect
+            (function() {
+                var header = document.getElementById('app-header');
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                });
+            })();
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    var targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    var target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        var headerOffset = 80;
+                        var top = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                        // Close mobile menu if open
+                        document.getElementById('mobile-panel').classList.remove('active');
+                        document.getElementById('mobile-overlay').classList.remove('active');
+                    }
+                });
+            });
+
+            // Mobile menu toggle
+            (function() {
+                var toggle = document.getElementById('mobile-toggle');
+                var panel = document.getElementById('mobile-panel');
+                var overlay = document.getElementById('mobile-overlay');
+                var close = document.getElementById('close-menu');
+
+                toggle.addEventListener('click', function() {
+                    panel.classList.add('active');
+                    overlay.classList.add('active');
+                });
+
+                close.addEventListener('click', function() {
+                    panel.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+
+                overlay.addEventListener('click', function() {
+                    panel.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+            })();
+
+            // How It Works tab switching
+            (function() {
+                var tabs = document.querySelectorAll('.hiw-tab-btn');
+                tabs.forEach(function(tab) {
+                    tab.addEventListener('click', function() {
+                        // Remove active from all
+                        tabs.forEach(function(t) { t.classList.remove('active'); });
+                        document.querySelectorAll('.hiw-tab-content').forEach(function(c) { c.classList.remove('active'); });
+                        // Add active to clicked
+                        this.classList.add('active');
+                        var target = document.getElementById(this.getAttribute('data-tab'));
+                        if (target) target.classList.add('active');
+                    });
+                });
+            })();
+
+            // Scroll animation (fade in up)
+            (function() {
+                var elements = document.querySelectorAll('.feature-card, .user-type-card, .rating-card, .hiw-step, .cta-card, .stat-item');
+                elements.forEach(function(el) {
+                    el.classList.add('fade-in-up');
+                });
+
+                function checkVisibility() {
+                    elements.forEach(function(el) {
+                        var rect = el.getBoundingClientRect();
+                        if (rect.top < window.innerHeight - 100) {
+                            el.classList.add('visible');
+                        }
+                    });
+                }
+
+                window.addEventListener('scroll', checkVisibility);
+                window.addEventListener('load', checkVisibility);
+            })();
+        </script>
     </body>
 </html>
