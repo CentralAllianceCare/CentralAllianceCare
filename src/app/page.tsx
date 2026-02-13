@@ -3,32 +3,32 @@ import Link from 'next/link'
 export default function Home() {
   const features = [
     {
-      icon: '👥',
+      icon: 'TEAM',
       title: 'Connect Professionals',
       description: 'Bridge the gap between healthcare providers and qualified workers in NDIS & Aged Care sectors.'
     },
     {
-      icon: '📋',
+      icon: 'DOCS',
       title: 'Streamlined Compliance',
       description: 'Manage certifications, background checks, and documentation in one secure platform.'
     },
     {
-      icon: '🎥',
+      icon: 'VIDEO',
       title: 'Video Interviews',
       description: 'Conduct remote interviews and reference checks with our integrated video calling system.'
     },
     {
-      icon: '📅',
+      icon: 'SCHEDULE',
       title: 'Smart Scheduling',
       description: 'Match availability between providers and workers with intelligent scheduling tools.'
     },
     {
-      icon: '💼',
+      icon: 'CAREER',
       title: 'Career Growth',
       description: 'Access professional development opportunities and build meaningful healthcare careers.'
     },
     {
-      icon: '🛡️',
+      icon: 'SECURITY',
       title: 'Trusted Platform',
       description: 'Secure, compliant platform trusted by healthcare professionals across Australia.'
     }
@@ -115,14 +115,14 @@ export default function Home() {
               href="/register"
               className="bg-[#00563F] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#C8A951] transition inline-flex items-center justify-center gap-3"
             >
-              <span className="text-xl">👩‍⚕️</span>
+              <span className="text-sm font-bold bg-white text-[#00563F] px-2 py-1 rounded">WORKER</span>
               Join as Healthcare Worker
             </Link>
             <Link
               href="/register"
               className="border-2 border-[#00563F] text-[#00563F] px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#00563F] hover:text-white transition inline-flex items-center justify-center gap-3"
             >
-              <span className="text-xl">🏥</span>
+              <span className="text-sm font-bold bg-[#00563F] text-white px-2 py-1 rounded">PROVIDER</span>
               Join as Provider
             </Link>
           </div>
@@ -155,7 +155,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                <div className="w-12 h-12 bg-[#00563F] text-white rounded-lg flex items-center justify-center text-xs font-semibold mb-4">
+                  {feature.icon}
+                </div>
                 <h3 className="text-xl font-semibold text-[#1a1a2e] mb-3">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
@@ -176,7 +178,7 @@ export default function Home() {
             {/* For Workers */}
             <div>
               <h3 className="text-2xl font-bold text-[#00563F] mb-8 flex items-center gap-3">
-                <span className="text-3xl">👩‍⚕️</span>
+                <span className="w-10 h-10 bg-[#00563F] text-white rounded-lg flex items-center justify-center text-xs font-bold">HCW</span>
                 For Healthcare Workers
               </h3>
               <div className="space-y-6">
@@ -202,7 +204,7 @@ export default function Home() {
             {/* For Providers */}
             <div>
               <h3 className="text-2xl font-bold text-[#00563F] mb-8 flex items-center gap-3">
-                <span className="text-3xl">🏥</span>
+                <span className="w-10 h-10 bg-[#C8A951] text-[#1a1a2e] rounded-lg flex items-center justify-center text-xs font-bold">HCP</span>
                 For Healthcare Providers
               </h3>
               <div className="space-y-6">
@@ -279,10 +281,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-8 text-sm text-white/60">
-            <span>✓ Free to join</span>
-            <span>✓ No setup fees</span>
-            <span>✓ Secure platform</span>
-            <span>✓ Australian owned</span>
+            <span>• Free to join</span>
+            <span>• No setup fees</span>
+            <span>• Secure platform</span>
+            <span>• Australian owned</span>
           </div>
         </div>
       </section>

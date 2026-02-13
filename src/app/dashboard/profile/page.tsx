@@ -465,8 +465,8 @@ export default function ProfilePage() {
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h3 className="font-semibold text-[#1a1a2e] mb-4">Profile Picture</h3>
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-3xl text-gray-400 mb-4">
-                  {user.name?.[0] || '👤'}
+                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-lg font-semibold text-gray-400 mb-4">
+                  {user.name?.[0] || 'USER'}
                 </div>
                 <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition">
                   Upload Photo

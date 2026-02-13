@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Auth Flow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .result {
+            background: #e8f5e8;
+            border: 1px solid #4CAF50;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .error {
+            background: #ffebee;
+            border: 1px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        button {
+            background: #00563F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #C8A951;
+        }
+        input, select {
+            width: 200px;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Central Alliance Care - Auth System Test</h1>
+    
+    <div class="test-section">
+        <h2>1. Test Registration</h2>
+        <div>
+            <input type="text" id="regName" placeholder="Full Name" value="Test Healthcare Worker">
+            <input type="email" id="regEmail" placeholder="Email" value="testworker@example.com">
+            <input type="password" id="regPassword" placeholder="Password" value="password123">
+            <select id="regRole">
+                <option value="worker">Healthcare Worker</option>
+                <option value="provider">Healthcare Provider</option>
+            </select>
+            <button onclick="testRegistration()">Test Registration</button>
+        </div>
+        <div id="regResult"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>2. Test Login</h2>
+        <div>
+            <input type="email" id="loginEmail" placeholder="Email" value="testworker@example.com">
+            <input type="password" id="loginPassword" placeholder="Password" value="password123">
+            <button onclick="testLogin()">Test Login</button>
+        </div>
+        <div id="loginResult"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>3. Navigation Tests</h2>
+        <button onclick="window.open('http://localhost:3000', '_blank')">Open Homepage</button>
+        <button onclick="window.open('http://localhost:3000/register', '_blank')">Open Register Page</button>
+        <button onclick="window.open('http://localhost:3000/login', '_blank')">Open Login Page</button>
+    </div>
+
+    <script>
+        async function testRegistration() {
+            const resultDiv = document.getElementById('regResult');
+            const name = document.getElementById('regName').value;
+            const email = document.getElementById('regEmail').value;
+            const password = document.getElementById('regPassword').value;
+            const role = document.getElementById('regRole').value;
+            
+            try {
+                const response = await fetch('http://localhost:3000/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        password: password,
+                        role: role
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.innerHTML = `<div class="result">✅ Registration successful! User ID: ${data.id}, Email: ${data.email}, Role: ${data.role}</div>`;
+                } else {
+                    resultDiv.innerHTML = `<div class="error">❌ Registration failed: ${data.error}</div>`;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">❌ Network error: ${error.message}</div>`;
+            }
+        }
+
+        async function testLogin() {
+            const resultDiv = document.getElementById('loginResult');
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            try {
+                // Test using NextAuth credentials provider
+                const response = await fetch('http://localhost:3000/api/auth/callback/credentials', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        email: email,
+                        password: password,
+                        redirect: false,
+                        json: true
+                    })
+                });
+                
+                const data = await response.text();
+                
+                if (response.ok) {
+                    resultDiv.innerHTML = `<div class="result">✅ Login response received (check browser network tab for full details)</div>`;
+                } else {
+                    resultDiv.innerHTML = `<div class="error">❌ Login failed - Status: ${response.status}</div>`;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">❌ Network error: ${error.message}</div>`;
+            }
+        }
+    </script>
+</body>
+</html>

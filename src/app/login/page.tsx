@@ -33,9 +33,9 @@ export default function LoginPage() {
   }
 
   const roles = [
-    { id: 'provider', label: 'Provider', icon: '🏥' },
-    { id: 'worker', label: 'Worker', icon: '👩‍⚕️' },
-    { id: 'admin', label: 'Admin', icon: '⚙️' },
+    { id: 'provider', label: 'Provider', icon: 'HCP' },
+    { id: 'worker', label: 'Worker', icon: 'HCW' },
+    { id: 'admin', label: 'Admin', icon: 'ADM' },
   ]
 
   return (
@@ -52,13 +52,13 @@ export default function LoginPage() {
         </div>
         <div className="relative z-10 mt-12 space-y-5 px-12 max-w-md w-full">
           {[
-            { icon: '👥', text: 'Access hundreds of qualified healthcare professionals' },
-            { icon: '📅', text: 'Manage bookings and availability in real-time' },
-            { icon: '🛡️', text: 'Compliance tracking and document management' },
-            { icon: '📹', text: 'Video interviews and live reference checks' },
+            { icon: 'STAFF', text: 'Access hundreds of qualified healthcare professionals' },
+            { icon: 'SCHED', text: 'Manage bookings and availability in real-time' },
+            { icon: 'COMP', text: 'Compliance tracking and document management' },
+            { icon: 'VIDEO', text: 'Video interviews and live reference checks' },
           ].map((f, i) => (
             <div key={i} className="flex items-center gap-4 text-white/80">
-              <span className="w-11 h-11 rounded-full border border-[#C8A951]/30 flex items-center justify-center text-lg shrink-0">{f.icon}</span>
+              <span className="w-11 h-11 rounded-full border border-[#C8A951]/30 flex items-center justify-center text-xs font-semibold shrink-0">{f.icon}</span>
               <span className="text-sm">{f.text}</span>
             </div>
           ))}
@@ -83,7 +83,9 @@ export default function LoginPage() {
                     : 'border-gray-200 bg-white hover:border-[#00563F]'
                 }`}
               >
-                <span className="block text-2xl mb-1">{r.icon}</span>
+                <span className={`block text-xs font-bold mb-1 px-2 py-1 rounded ${
+                  role === r.id ? 'bg-white text-[#00563F]' : 'bg-[#00563F] text-white'
+                }`}>{r.icon}</span>
                 <span className="text-sm font-semibold">{r.label}</span>
               </button>
             ))}

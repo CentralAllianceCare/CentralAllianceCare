@@ -54,7 +54,7 @@ export default function DashboardPage() {
       description: 'Add your qualifications, experience, and availability',
       action: 'Edit Profile',
       href: '/dashboard/profile',
-      icon: '👤',
+      icon: 'PROF',
       priority: 'high'
     },
     {
@@ -62,7 +62,7 @@ export default function DashboardPage() {
       description: 'Find healthcare positions that match your skills',
       action: 'Coming Soon',
       href: '#',
-      icon: '🔍',
+      icon: 'JOBS',
       priority: 'medium'
     },
     {
@@ -70,7 +70,7 @@ export default function DashboardPage() {
       description: 'Keep your schedule current for providers',
       action: 'Update Schedule',
       href: '/dashboard/profile',
-      icon: '📅',
+      icon: 'CAL',
       priority: 'medium'
     },
     {
@@ -78,7 +78,7 @@ export default function DashboardPage() {
       description: 'Ensure all certifications are up to date',
       action: 'Review Documents',
       href: '/dashboard/profile',
-      icon: '📋',
+      icon: 'DOCS',
       priority: 'medium'
     }
   ]
@@ -89,7 +89,7 @@ export default function DashboardPage() {
       description: 'Complete your business information and services',
       action: 'Edit Profile',
       href: '/dashboard/profile',
-      icon: '🏥',
+      icon: 'BIZ',
       priority: 'high'
     },
     {
@@ -97,7 +97,7 @@ export default function DashboardPage() {
       description: 'Search for qualified healthcare professionals',
       action: 'Coming Soon',
       href: '#',
-      icon: '👥',
+      icon: 'STAFF',
       priority: 'high'
     },
     {
@@ -105,7 +105,7 @@ export default function DashboardPage() {
       description: 'Manage video interviews with candidates',
       action: 'Schedule Interviews',
       href: '/dashboard/video',
-      icon: '🎥',
+      icon: 'VIDEO',
       priority: 'medium'
     },
     {
@@ -113,7 +113,7 @@ export default function DashboardPage() {
       description: 'Set up training programs for your staff',
       action: 'Setup Portal',
       href: '/dashboard/profile',
-      icon: '🎓',
+      icon: 'EDU',
       priority: 'low'
     }
   ]
@@ -158,7 +158,7 @@ export default function DashboardPage() {
       <div className="max-w-6xl mx-auto p-8">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-[#1a1a2e] mb-2">
-            Welcome back, {user.name || 'User'} 👋
+            Welcome back, {user.name || 'User'}
           </h2>
           <p className="text-gray-500 text-lg">
             {isWorker 
@@ -171,7 +171,7 @@ export default function DashboardPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-4">
-              <span className="text-3xl">👤</span>
+              <span className="w-10 h-10 bg-[#C8A951] text-[#1a1a2e] rounded-lg flex items-center justify-center text-xs font-bold">PROF</span>
               <span className="text-2xl font-bold text-[#C8A951]">{stats.profileCompletion}%</span>
             </div>
             <p className="text-gray-500 text-sm">Profile Completion</p>
@@ -185,7 +185,7 @@ export default function DashboardPage() {
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-4">
-              <span className="text-3xl">💬</span>
+              <span className="w-10 h-10 bg-[#00563F] text-white rounded-lg flex items-center justify-center text-xs font-bold">MSG</span>
               <span className="text-2xl font-bold text-[#00563F]">{stats.messages}</span>
             </div>
             <p className="text-gray-500 text-sm">Unread Messages</p>
@@ -193,7 +193,7 @@ export default function DashboardPage() {
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-4">
-              <span className="text-3xl">📅</span>
+              <span className="w-10 h-10 bg-[#1a1a2e] text-white rounded-lg flex items-center justify-center text-xs font-bold">CAL</span>
               <span className="text-2xl font-bold text-[#1a1a2e]">{stats.upcoming}</span>
             </div>
             <p className="text-gray-500 text-sm">
@@ -203,7 +203,7 @@ export default function DashboardPage() {
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-4">
-              <span className="text-3xl">{isWorker ? '⭐' : '👥'}</span>
+              <span className="w-10 h-10 bg-[#00563F] text-white rounded-lg flex items-center justify-center text-xs font-bold">{isWorker ? 'APP' : 'TEAM'}</span>
               <span className="text-2xl font-bold text-[#00563F]">0</span>
             </div>
             <p className="text-gray-500 text-sm">
@@ -228,14 +228,14 @@ export default function DashboardPage() {
                 href="/dashboard/profile"
                 className="bg-[#C8A951] text-[#1a1a2e] px-6 py-3 rounded-lg font-semibold hover:bg-white transition inline-flex items-center gap-2"
               >
-                <span className="text-lg">👤</span>
+                <span className="text-xs font-bold bg-[#1a1a2e] text-[#C8A951] px-2 py-1 rounded">PROF</span>
                 Complete Profile
               </Link>
               <Link
                 href="/dashboard/messages"
                 className="bg-white/20 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/30 transition inline-flex items-center gap-2"
               >
-                <span className="text-lg">💬</span>
+                <span className="text-xs font-bold bg-white text-[#1a1a2e] px-2 py-1 rounded">MSG</span>
                 Start Networking
               </Link>
             </div>
@@ -249,7 +249,7 @@ export default function DashboardPage() {
             {quickActions.map((action, index) => (
               <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl">{action.icon}</div>
+                  <div className="w-12 h-12 bg-[#00563F] text-white rounded-lg flex items-center justify-center text-xs font-bold">{action.icon}</div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       <h4 className="font-semibold text-[#1a1a2e] text-lg">{action.title}</h4>
@@ -282,7 +282,7 @@ export default function DashboardPage() {
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
           <h3 className="text-xl font-semibold text-[#1a1a2e] mb-4">Recent Activity</h3>
           <div className="text-center py-8">
-            <div className="text-4xl mb-4">📈</div>
+            <div className="w-16 h-16 bg-gray-100 text-gray-400 rounded-lg flex items-center justify-center text-sm font-bold mx-auto mb-4">ACTIVITY</div>
             <h4 className="font-medium text-gray-800 mb-2">No recent activity</h4>
             <p className="text-gray-500 text-sm">
               {isWorker 

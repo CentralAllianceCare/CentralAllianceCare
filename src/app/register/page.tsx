@@ -45,8 +45,8 @@ export default function RegisterPage() {
   }
 
   const roles = [
-    { id: 'provider', label: 'Business Provider', desc: 'Healthcare facility or service', icon: '🏥' },
-    { id: 'worker', label: 'Healthcare Worker', desc: 'AIN, EN, RN, Coordinator, etc.', icon: '👩‍⚕️' },
+    { id: 'provider', label: 'Business Provider', desc: 'Healthcare facility or service', icon: 'HCP' },
+    { id: 'worker', label: 'Healthcare Worker', desc: 'AIN, EN, RN, Coordinator, etc.', icon: 'HCW' },
   ]
 
   return (
@@ -63,13 +63,13 @@ export default function RegisterPage() {
         </div>
         <div className="relative z-10 mt-12 space-y-5 px-12 max-w-md w-full">
           {[
-            { icon: '✨', text: 'Build your professional profile' },
-            { icon: '🔗', text: 'Connect with providers and workers' },
-            { icon: '📋', text: 'Manage compliance documents easily' },
-            { icon: '💼', text: 'Find opportunities or find staff' },
+            { icon: 'PROF', text: 'Build your professional profile' },
+            { icon: 'CONN', text: 'Connect with providers and workers' },
+            { icon: 'DOCS', text: 'Manage compliance documents easily' },
+            { icon: 'JOBS', text: 'Find opportunities or find staff' },
           ].map((f, i) => (
             <div key={i} className="flex items-center gap-4 text-white/80">
-              <span className="w-11 h-11 rounded-full border border-[#C8A951]/30 flex items-center justify-center text-lg shrink-0">{f.icon}</span>
+              <span className="w-11 h-11 rounded-full border border-[#C8A951]/30 flex items-center justify-center text-xs font-semibold shrink-0">{f.icon}</span>
               <span className="text-sm">{f.text}</span>
             </div>
           ))}
@@ -94,7 +94,9 @@ export default function RegisterPage() {
                     : 'border-gray-200 bg-white hover:border-[#00563F]'
                 }`}
               >
-                <span className="block text-2xl mb-1">{r.icon}</span>
+                <span className={`block text-xs font-bold mb-1 px-2 py-1 rounded ${
+                  form.role === r.id ? 'bg-white text-[#00563F]' : 'bg-[#00563F] text-white'
+                }`}>{r.icon}</span>
                 <span className="text-sm font-semibold block">{r.label}</span>
                 <span className={`text-xs block mt-1 ${form.role === r.id ? 'text-white/70' : 'text-gray-400'}`}>{r.desc}</span>
               </button>
