@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  password      String
+  role          String    @default("worker") // worker | provider | admin
+  phone         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  profile       Profile?
+  sentMessages  Message[] @relation("MessageSender")
+  receivedMessages Message[] @relation("MessageReceiver")
+}
+
+model Profile {
+  id            String    @id @default(cuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  
+  // Common
+  bio           String?
+  avatar        String?
+  location      String?
+  
+  // Worker-specific
+  qualifications String?
+  experience     String?
+  expectedSalary String?
+  transport      String?
+  licenseType    String?
+  childrenCheck  Boolean?
+  ndisRegistered Boolean?
+  firstAidExpiry DateTime?
+  vaccinationDate DateTime?
+  careerGoals    String?
+  
+  // Provider-specific
+  businessName   String?
+  businessType   String?   // disability | aged_care | both
+  abn            String?
+  servicesOffered String?
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Message {
+  id           String   @id @default(cuid())
+  content      String
+  senderId     String
+  receiverId   String
+  sender       User     @relation("MessageSender", fields: [senderId], references: [id])
+  receiver     User     @relation("MessageReceiver", fields: [receiverId], references: [id])
+  createdAt    DateTime @default(now())
+  read         Boolean  @default(false)
+}
