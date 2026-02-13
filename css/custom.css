@@ -1,0 +1,222 @@
+/* Central Alliance Care — Custom Theme Overrides */
+/* Forest Green: #00563F | Gold: #C8A951 | Dark: #1a1a2e */
+
+/* Gold accent on key elements */
+.slider .single-slider h1 span,
+.section-title h2,
+.pricing-table .single-table .amount {
+    color: #C8A951;
+}
+
+.slider .single-slider .btn.primary,
+.call-action .content .second:hover,
+.pricing-table .single-table:hover .table-head {
+    background: #C8A951;
+    border-color: #C8A951;
+}
+
+.slider .single-slider .btn.primary:hover {
+    background: #b89840;
+}
+
+/* Dark overlay enhancements */
+.overlay:before {
+    background: rgba(26, 26, 46, 0.85);
+}
+
+.header .topbar {
+    background: #1a1a2e;
+}
+
+/* Gold underlines and accents */
+.section-title img {
+    filter: sepia(100%) saturate(300%) brightness(80%) hue-rotate(10deg);
+}
+
+.why-choose .choose-left h3 {
+    color: #C8A951;
+}
+
+.schedule .single-schedule.middle {
+    background: #C8A951;
+}
+
+/* Team section gold hover */
+.team .t-bottom h2 a:hover {
+    color: #C8A951;
+}
+
+/* Footer gold links */
+.footer .single-footer h2 {
+    color: #C8A951;
+}
+
+/* Button gold outline variant */
+.btn-gold {
+    background: transparent;
+    border: 2px solid #C8A951;
+    color: #C8A951;
+    padding: 10px 30px;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.btn-gold:hover {
+    background: #C8A951;
+    color: #fff;
+}
+
+/* Login page custom styles */
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #00563F 100%);
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.login-card .card-left {
+    background: linear-gradient(135deg, #00563F 0%, #1a1a2e 100%);
+    padding: 60px 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-card .card-left h2 {
+    color: #C8A951;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.login-card .card-left p {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.8;
+}
+
+.login-card .card-right {
+    padding: 60px 40px;
+}
+
+.login-card .card-right h2 {
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.login-card .card-right .subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-card .form-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.login-card .form-input:focus {
+    border-color: #00563F;
+}
+
+.login-card .btn-login {
+    width: 100%;
+    padding: 14px;
+    background: #00563F;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-card .btn-login:hover {
+    background: #C8A951;
+}
+
+.login-card .divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+    color: #999;
+}
+
+.login-card .divider::before,
+.login-card .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.login-card .divider::before { left: 0; }
+.login-card .divider::after { right: 0; }
+
+.login-card .role-select {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.login-card .role-btn {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #fff;
+    font-weight: 500;
+}
+
+.login-card .role-btn:hover,
+.login-card .role-btn.active {
+    border-color: #00563F;
+    background: #00563F;
+    color: #fff;
+}
+
+.login-card .role-btn i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.login-card .links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-card .links a {
+    color: #00563F;
+    font-weight: 500;
+}
+
+.login-card .links a:hover {
+    color: #C8A951;
+}
+
+@media (max-width: 768px) {
+    .login-card .card-left {
+        padding: 40px 30px;
+    }
+    .login-card .card-right {
+        padding: 40px 30px;
+    }
+}
