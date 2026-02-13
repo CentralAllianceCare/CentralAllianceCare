@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "NEXTAUTH_SECRET": "@nextauth-secret",
+      "NEXTAUTH_URL": "https://centralalliancecare.vercel.app"
+    }
+  },
+  "env": {
+    "DATABASE_URL": "file:./prisma/dev.db",
+    "NEXTAUTH_SECRET": "@nextauth-secret",
+    "NEXTAUTH_URL": "https://centralalliancecare.vercel.app"
+  }
+}
