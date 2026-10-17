@@ -101,7 +101,7 @@ npx prisma migrate deploy
 ```
 
 This will:
-- Read your `.env.production` DATABASE_URL
+- Read DATABASE_URL from the process environment or Prisma-supported .env loading; .env.production is not loaded automatically by this command
 - Connect to Supabase PostgreSQL
 - Create User, Profile, Message tables
 
@@ -134,7 +134,7 @@ NEXTAUTH_SECRET="[paste-output-here]"
 cd C:\Users\joena\.openclaw\workspace\CentralAllianceCare
 
 git add prisma/schema.prisma
-git add .env.production
+# Configure secrets in the deployment host; never commit .env.production
 git commit -m "feat: prepare for production deployment (Vercel + Supabase)"
 git push origin main
 ```
