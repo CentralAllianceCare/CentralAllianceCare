@@ -13,3 +13,5 @@ Source files:
 - provider-home.png: 8D80D055-AFAC-4C79-964D-9846CA5BF7BE.png
 - provider-candidates.png: F035EC3C-6572-4BAF-8399-B5A51FC39BB9.png
 - provider-team.png: D5EEAA28-F8CC-4A2B-9CFF-CB3E7FF1FDAD.png
+
+Navigation QC: header and footer app links open `/register`; `/login` redirects there for old bookmarks. The provider preview link opens `/register#provider`, selecting the provider journey. Homepage section anchors remain on the homepage. Server auth APIs and legacy dashboard routes remain in the repository, but the public preview navigation does not link to them.

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import styles from './preview.module.css'
 
@@ -27,6 +27,15 @@ type Role = keyof typeof journeys
 export default function RegisterPage() {
   const [role, setRole] = useState<Role>('worker')
   const [step, setStep] = useState(0)
+  useEffect(() => {
+    const syncRole = () => {
+      setRole(window.location.hash === '#provider' ? 'provider' : 'worker')
+      setStep(0)
+    }
+    syncRole()
+    window.addEventListener('hashchange', syncRole)
+    return () => window.removeEventListener('hashchange', syncRole)
+  }, [])
   const journey = journeys[role]
   const screen = journey.steps[step]
 
